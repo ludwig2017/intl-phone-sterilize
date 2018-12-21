@@ -8,6 +8,6 @@ app.config(function($routeProvider) {
 		templateUrl : "resources/views/country/index.htm"
 	})
 	.when("/leads", {
-		templateUrl : "resources/views/leads/index.php"
+		templateUrl : "app/controller/inc/leads/fetch.php"
 	});
 });

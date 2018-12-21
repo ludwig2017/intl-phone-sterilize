@@ -15,6 +15,7 @@
 	$output = '
 		<table class="table table-striped table-bordered">
 			<tr>
+				<th>No.</th>
 				<th>E-mail</th>
 				<th>Phone</th>
 				<th>Lastname</th>
@@ -26,7 +27,8 @@
 	if($total_row > 0) {
 		foreach ($result as $row) {
 			$output .= '
-				<tr>
+				<tr class="sugodnomero">
+					<td></td>
 					<td>'.$row["email"].'</td>
 					<td>'.$row["phone"].'</td>
 					<td>'.$row["lastname"].'</td>

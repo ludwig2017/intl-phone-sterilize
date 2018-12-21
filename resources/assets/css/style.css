@@ -8,6 +8,13 @@
 	background-color: #f1f1f1;
 	height: 100%;
 	min-height: 600px;
+	position: fixed;
+	z-index: 9;
+}
+
+#insidecontent {
+	position: absolute;
+	right: 0px;
 }
 
 /* On small screens, set height to 'auto' for the grid */
@@ -15,4 +22,22 @@
 	.row.content {
 		height: auto;
 	}
+}
+
+table {
+	counter-reset: rowNumber;
+}
+
+table tr.sugodnomero {
+	counter-increment: rowNumber;
+}
+
+table tr.sugodnomero td:first-child::before {
+	content: counter(rowNumber);
+	min-width: 1em;
+	margin-right: 0.5em;
+}
+
+table tr td {
+	width: auto;
 }

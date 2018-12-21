@@ -58,7 +58,7 @@
 				<br>
 			</div>
 			<br>
-			<div ng-view class="col-sm-9"></div>
+			<div ng-view id="insidecontent" class="col-sm-9"></div>
 		</div>
 	</div>
 	<script src="route/web.js"></script>
