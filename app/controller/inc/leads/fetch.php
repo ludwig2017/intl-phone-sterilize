@@ -4,7 +4,7 @@
 
 	$query = "SELECT * FROM  tbl_client_phone WHERE LENGTH(phone) = '12' AND phone LIKE '44%'";
 
-	$statement = $connect->prepare($query);
+	$statement = $pdo_connect->prepare($query);
 
 	$statement->execute();
 
