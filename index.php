@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Your SEO Content goes here.">
 	<meta name="keywords" content="Your SEO Keywords goes here.">
-	<title>Int'l Phone Sterilizer</title>
+	<title>Leads Cleaner</title>
 	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo/favicon-32x32.png">
 	<link rel="stylesheet" href="bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -48,11 +48,18 @@
 			<div class="col-sm-3 sidenav hidden-xs">
 				<h2>
 					<i class="glyphicon glyphicon-phone"></i>
-					<b>International Phone Sterilizer</b>
+					<b>Leads Cleaner</b>
 				</h2>
 				<ul class="nav nav-pills nav-stacked">
 					<li class="active"><a href="#/!">Dashboard</a></li>
-					<li><a href="#!country">Country</a></li>
+					<li class="dropdown">
+						<a class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Country<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">HTML</a></li>
+							<li><a href="#">CSS</a></li>
+							<li><a href="#">JavaScript</a></li>
+						</ul>
+					</li>
 					<li><a href="#!leads">Leads</a></li>
 				</ul>
 				<br>

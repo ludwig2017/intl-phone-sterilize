@@ -6,7 +6,7 @@
 		echo $filename = $_FILES["file"]["tmp_name"];
 		if($_FILES["file"]["size"] > 0) {
 			$file = fopen($filename, r);
-			while (($empData = fgetcsv($file, 10000,",")) !== FALSE) {
+			while (($empData = fgetcsv($file, 1000,",")) !== FALSE) {
 				$sql = "INSERT INTO tbl_client_phone(email,phone,firstname,lastname) VALUES('$empData[0]','$empData[1]','$empData[2]','$empData[3]')";
 				$statement = $pdo_connect->prepare($sql);
 				$statement->execute();

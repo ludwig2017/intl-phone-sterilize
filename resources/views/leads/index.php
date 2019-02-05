@@ -17,7 +17,7 @@
 
 	include('../../../config/database.php');
 
-	$query = "SELECT * FROM  vw_germany";
+	$query = "SELECT * FROM tbl_client_phone WHERE phone LIKE '447%' OR phone LIKE '442%' AND length(phone) = 12 ORDER BY phone ASC";
 
 	$statement = $pdo_connect->prepare($query);
 
@@ -49,15 +49,15 @@
 					<td>'.$row["phone"].'</td>
 					<td>'.$row["firstname"].'</td>
 					<td>'.$row["lastname"].'</td>
-					<td>DE</td>
-					<td>Germany</td>
+					<td>GB</td>
+					<td>United Kingdom</td>
 				</tr>
 			';
 		}
 	} else {
 		$output .= '
 			<tr>
-				<td colspan="4" align="center">No record(s) to be display.</td>
+				<td colspan="4" align="center">No records to be display.</td>
 			</tr>
 		';
 	}

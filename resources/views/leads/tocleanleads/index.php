@@ -4,7 +4,7 @@
 
 	$csv_filename = 'united_kingdom'.date('Y-m-d').'.csv';
 
-	$query = "SELECT * FROM  vw_germany";
+	$query = "SELECT * FROM  tbl_client_phone WHERE LENGTH(phone) = '12' AND phone LIKE '447%' OR phone LIKE '442%' WHEN phone LIKE '447%' THEN type = 'Mobile' WHEN phone LIKE '442%' THEN type = 'Telephone' ORDER BY phone ASC";
 
 	$statement = $pdo_connect->prepare($query);
 

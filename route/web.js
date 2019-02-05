@@ -2,7 +2,7 @@ var app = angular.module("myApp", ["ngRoute"]);
 app.config(function($routeProvider) {
 	$routeProvider
 	.when("/", {
-		templateUrl : "resources/views/home/index.htm"
+		templateUrl : "resources/views/home/"
 	})
 	.when("/country", {
 		templateUrl : "resources/views/country/index.htm"

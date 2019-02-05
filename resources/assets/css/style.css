@@ -12,6 +12,20 @@
 	z-index: 9;
 }
 
+.sidenav .dropdown-menu {
+	position: relative;
+	width: 100%;
+	border-radius: 0;
+	border: none;
+	background-color: transparent;
+	box-shadow: none;
+}
+
+.caret {
+	margin-top: 8px;
+	float: right;
+}
+
 #insidecontent {
 	position: absolute;
 	right: 0px;
